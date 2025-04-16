@@ -1,0 +1,105 @@
+<!--
+  media.html
+  A personal message using various HTML media elements.
+  Includes: picture, audio, video, iframe, embed, object
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me with Media</title>
+</head>
+<body>
+
+
+    <!-- Linking the pages -->
+    <!-- <a name="top"></a> -->
+
+    <h2 align="center">
+      <div class="">
+        <a href="./index.html">Home</a>
+        <a href="./table.html">Altschool Programs</a>
+        <a href="./media.html">Discover More About Me</a><br />
+      </div>
+      </h2>
+    <br />
+
+  <h1>Discover More About Me!</h1>
+
+  <!-- Responsive Image with <picture> -->
+    <div class="">
+      <h2>My Favorite Places</h2>
+      <p>Here are some of my favorite media files:</p>
+  <h2>Photos</h2>
+  <picture>
+    <!-- Mobile source -->
+    <source media="(max-width: 480px)" srcset="./assets/images/passport_2.jpg">
+    <!-- Tablet source -->
+    <source media="(min-width: 481px) and (max-width: 1024px)" srcset="./assets/images/pics-2.jpg">
+    <!-- Desktop source -->
+    <source media="(min-width: 1025px)" srcset="./assets/images/passport_2.jpeg">
+    <!-- Fallback image -->
+    <img src="./assets/images/pics-2.jpg" alt="A photo of me smiling" width="150" height="200">
+    <!-- <img src="./assets/images/passport.jpg" alt="A passport size photo" width="150" height="200"> -->
+  </picture>
+    </div>
+  
+<br />
+
+  <!-- Audio Element -->
+  <h2>Listen to My Personal Message</h2>
+  <audio controls>
+    <source src="./assets/audio/Recording.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+<br />
+  <br /> 
+
+  <!-- Video Element -->
+  <!-- <h2>Watch My Journey</h2>
+  <video width="640" height="360" controls>
+    <source src="./assets/videos/VID_20240826_201728.mp4" type="video/mp4">
+    Your browser does not support the video tag..
+  </video> -->
+
+
+  <br />
+
+  <!-- Iframe Element (e.g., YouTube Embed) -->
+  <h2>My Favorite Teck Talk</h2>
+  <iframe 
+  width="640" 
+  height="360" 
+  src="https://www.youtube.com/embed/EPkCENAFpnQ" 
+  frameborder="0" 
+  webkitallowfullscreen 
+  mozallowfullscreen 
+  title="My Altschool Data Engineering Journey" allowfullscreen>
+  </iframe>
+<br />
+
+  <br />
+  <br />
+
+  <!-- Iframe Element (e.g., YouTube Embed) -->
+  <h2>My Favorite Teck Talk</h2>
+  <iframe 
+  width="640" 
+  height="360" 
+  src="https://www.loom.com/embed/b2881d43b0b645eaa5cfc4647200243c?sid=7843cea1-3e8a-4672-9747-a03ef0a5422b" 
+  frameborder="0" 
+  webkitallowfullscreen 
+  mozallowfullscreen 
+  title="My Altschool Data Engineering Presentation" allowfullscreen>
+  </iframe>
+<br />
+
+<br />
+  <!-- Navigate to pages -->
+  <p><a href="index.html"><<< Back to Profile</a></p>
+  <p><a href="table.html"><<< Back to Altschool Programs</a></p>
+
+</body>
+</html>
